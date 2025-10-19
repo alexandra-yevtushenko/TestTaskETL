@@ -22,9 +22,6 @@
 
         public float TipAmount { get; set; }
 
-
-
-        
-
     }
 }
+
