@@ -64,11 +64,11 @@ PassengerCount field contain NULLs, so when we find duplicates using it, more ro
         {
             batch.Add(record);
 
-        if (batch.Count == 1000)
-        {
-            ProcessBatch(batch); // Process data function
-            batch.Clear();
-        }
+            if (batch.Count == 1000)
+            {
+                ProcessBatch(batch); // Process data function
+                batch.Clear();
+            }
         }
 
         if (batch.Any())
